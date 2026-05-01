@@ -1,190 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>B&L Consultores | Asesoría administrativa y contable</title>
-  <meta name="description" content="B&L Consultores brinda asesoría administrativa y contable para juntas de educación públicas y juntas administrativas en Costa Rica." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <title>B&L Consultores</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <nav class="navbar">
-      <a href="#inicio" class="brand" aria-label="B&L Consultores inicio">
-        <img src="assets/logo-bl-consultores.png" alt="Logo B&L Consultores" />
-        <span>B&L Consultores</span>
-      </a>
-      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#sobre-nosotros">Sobre nosotros</a></li>
-        <li><a href="#experiencia">Experiencia</a></li>
-        <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
+
+<header>
+    <h1>B&L Consultores</h1>
+    <nav>
+        <button onclick="mostrarSeccion('inicio')">Inicio</button>
+        <button onclick="mostrarSeccion('sobre')">Sobre Nosotros</button>
+        <button onclick="mostrarSeccion('experiencia')">Experiencia</button>
+        <button onclick="mostrarSeccion('servicios')">Servicios</button>
+        <button onclick="mostrarSeccion('contacto')">Contacto</button>
     </nav>
-  </header>
+</header>
 
-  <main>
-    <section id="inicio" class="hero section-padding">
-      <div class="hero-content">
-        <p class="eyebrow">Consultoría especializada en Costa Rica</p>
-        <h1>Asesoría administrativa y contable para juntas de educación públicas</h1>
-        <p class="hero-text">Acompañamos a juntas de educación y juntas administrativas en el manejo responsable de fondos públicos, fortaleciendo el orden documental, el control financiero y el cumplimiento normativo.</p>
-        <div class="hero-actions">
-          <a class="btn primary" href="https://wa.me/50670486880" target="_blank" rel="noopener">Contactar por WhatsApp</a>
-          <a class="btn secondary" href="#servicios">Ver servicios</a>
-        </div>
-      </div>
-      <div class="hero-card">
-        <img src="assets/logo-bl-consultores.png" alt="B&L Consultores asesoría administrativa y contable" />
-        <div class="hero-card-info">
-          <strong>GAM | Modalidad mixta</strong>
-          <span>Atención presencial y virtual</span>
-        </div>
-      </div>
-    </section>
+<main>
 
-    <section class="highlights">
-      <article><strong>13+</strong><span>años de experiencia en sector público</span></article>
-      <article><strong>SICOP</strong><span>conocimiento en contratación pública</span></article>
-      <article><strong>MEP</strong><span>enfoque en juntas de educación</span></article>
-    </section>
+<section id="inicio" class="seccion activa">
+    <h2>Bienvenido</h2>
+    <p>Asesoría administrativa y contable para juntas de educación públicas.</p>
+</section>
 
-    <section id="sobre-nosotros" class="section-padding light-section">
-      <div class="section-header">
-        <p class="eyebrow">Sobre nosotros</p>
-        <h2>Un proyecto creado para apoyar la gestión responsable de las juntas</h2>
-        <p>B&L Consultores nace como una iniciativa de consultoría y asesoría externa para atender necesidades administrativas y contables detectadas en juntas de educación públicas, con un enfoque claro en transparencia, orden y eficiencia.</p>
-      </div>
+<section id="sobre" class="seccion">
+    <h2>Sobre Nosotros</h2>
+    <p>Brindamos asesoría contable y administrativa con más de 13 años de experiencia en el sector público.</p>
+</section>
 
-      <div class="tabs">
-        <button class="tab-button active" data-tab="historia">Historia</button>
-        <button class="tab-button" data-tab="mision">Misión</button>
-        <button class="tab-button" data-tab="vision">Visión</button>
-        <button class="tab-button" data-tab="valores">Valores</button>
-      </div>
+<section id="experiencia" class="seccion">
+    <h2>Experiencia</h2>
+    <p>Especialistas en juntas de educación, SICOP, presupuestos y control financiero.</p>
+</section>
 
-      <div class="tab-content active" id="historia">
-        <h3>Historia</h3>
-        <p>La empresa surge al identificar la necesidad de brindar acompañamiento técnico a juntas de educación y juntas administrativas en el manejo de recursos públicos. A partir de la experiencia acumulada en el sector público, B&L Consultores busca aportar herramientas, criterio profesional y buenas prácticas para fortalecer la gestión financiera, documental y administrativa de estas organizaciones.</p>
-      </div>
-      <div class="tab-content" id="mision">
-        <h3>Misión</h3>
-        <p>Brindar asesoría contable y administrativa a juntas de educación públicas y juntas administrativas para fortalecer el cumplimiento normativo, la transparencia y el buen manejo de los recursos.</p>
-      </div>
-      <div class="tab-content" id="vision">
-        <h3>Visión</h3>
-        <p>Ser un referente de eficiencia y calidad en la ejecución de buenas prácticas para el manejo de fondos públicos, con servicios especializados, confiables y apegados a la normativa vigente.</p>
-      </div>
-      <div class="tab-content" id="valores">
-        <h3>Valores</h3>
-        <div class="values-grid">
-          <span>Transparencia</span>
-          <span>Responsabilidad</span>
-          <span>Compromiso</span>
-          <span>Servicio personalizado</span>
-        </div>
-      </div>
-    </section>
+<section id="servicios" class="seccion">
+    <h2>Servicios</h2>
+    <ul>
+        <li>Asesoría contable mensual</li>
+        <li>Conciliaciones bancarias</li>
+        <li>Control de ingresos y egresos</li>
+        <li>Capacitación</li>
+    </ul>
+</section>
 
-    <section id="experiencia" class="section-padding">
-      <div class="two-column">
-        <div>
-          <p class="eyebrow">Experiencia profesional</p>
-          <h2>Conocimiento aplicado a la realidad de las juntas</h2>
-          <p>El proyecto cuenta con experiencia en el sector público, especialmente en procesos vinculados con juntas de educación, contratación pública, manejo de SICOP, revisión presupuestaria y apoyo administrativo-financiero.</p>
-          <p>El perfil profesional incorpora formación en Contaduría Pública, Administración de Empresas con énfasis en Contaduría y Finanzas, y Administración de Negocios.</p>
-        </div>
-        <div class="experience-card">
-          <h3>Áreas de experiencia</h3>
-          <ul>
-            <li>Elaboración y revisión de presupuestos de juntas.</li>
-            <li>Revisión de reprogramaciones presupuestarias y presupuestos extraordinarios.</li>
-            <li>Gestión de apertura de cuentas ante entidades bancarias.</li>
-            <li>Control de chequeras y libros de bancos.</li>
-            <li>Manejo de informes mensuales de juntas.</li>
-            <li>Uso de Excel, SICOP, ATV, sistemas contables, facturación electrónica y plataformas bancarias.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+<section id="contacto" class="seccion">
+    <h2>Contacto</h2>
+    <p>Email: blconsultoresoficial@gmail.com</p>
+    <p>WhatsApp: +506 7048-6880</p>
+</section>
 
-    <section id="servicios" class="section-padding light-section">
-      <div class="section-header">
-        <p class="eyebrow">Servicios</p>
-        <h2>Soluciones administrativas y contables</h2>
-        <p>Ofrecemos acompañamiento orientado al cumplimiento, el orden y la toma de decisiones oportunas.</p>
-      </div>
-      <div class="services-grid">
-        <article><h3>Asesoría contable mensual</h3><p>Apoyo continuo para mantener registros, documentos e informes actualizados.</p></article>
-        <article><h3>Registros contables</h3><p>Elaboración y revisión de ingresos, egresos y documentación de respaldo.</p></article>
-        <article><h3>Conciliaciones bancarias</h3><p>Revisión y control de movimientos bancarios para fortalecer la trazabilidad.</p></article>
-        <article><h3>Presupuestos</h3><p>Apoyo en presupuestos, reprogramaciones y presupuestos extraordinarios.</p></article>
-        <article><h3>Informes para juntas</h3><p>Preparación de reportes mensuales, trimestrales y anuales.</p></article>
-        <article><h3>Control de pagos</h3><p>Revisión de facturas, expedientes de pago y orden documental.</p></article>
-        <article><h3>Cumplimiento normativo</h3><p>Orientación para que la gestión se mantenga apegada a las disposiciones aplicables.</p></article>
-        <article><h3>Capacitación</h3><p>Capacitación a miembros de juntas en temas administrativos y financieros.</p></article>
-        <article><h3>Compras públicas</h3><p>Apoyo general en procesos vinculados con contratación pública y SICOP.</p></article>
-      </div>
-    </section>
+</main>
 
-    <section id="por-que-elegirnos" class="section-padding">
-      <div class="section-header">
-        <p class="eyebrow">Por qué elegirnos</p>
-        <h2>Un servicio cercano, técnico y orientado a resultados</h2>
-      </div>
-      <div class="reasons-grid">
-        <div><span>01</span><h3>Especialización</h3><p>Conocemos la dinámica de las juntas de educación y las exigencias administrativas del sector público.</p></div>
-        <div><span>02</span><h3>Orden y control</h3><p>Promovemos documentación clara, control de recursos y respaldo adecuado de las gestiones.</p></div>
-        <div><span>03</span><h3>Acompañamiento</h3><p>Brindamos una atención profesional, clara y cercana para facilitar la toma de decisiones.</p></div>
-      </div>
-    </section>
+<script src="script.js"></script>
 
-    <section id="contacto" class="section-padding contact-section">
-      <div class="contact-box">
-        <div>
-          <p class="eyebrow">Contacto</p>
-          <h2>Conversemos sobre las necesidades de su junta</h2>
-          <p>Podemos atender consultas iniciales y orientar sobre el tipo de acompañamiento que mejor se ajuste a la realidad de cada junta.</p>
-        </div>
-        <div class="contact-details">
-          <p><strong>Contacto:</strong> Rafael Lemus</p>
-          <p><strong>Correo:</strong> <a href="mailto:blconsultoresoficial@gmail.com">blconsultoresoficial@gmail.com</a></p>
-          <p><strong>WhatsApp:</strong> <a href="https://wa.me/50670486880" target="_blank" rel="noopener">+506 7048-6880</a></p>
-          <p><strong>Horario:</strong> 7:00 a.m. – 6:00 p.m.</p>
-        </div>
-      </div>
-      <p class="legal-note">Servicio privado de asesoría contable y administrativa. No representamos oficialmente al Ministerio de Educación Pública ni a ninguna institución pública.</p>
-    </section>
-  </main>
-
-  <div class="chatbot minimized" id="chatbot">
-    <button class="chat-toggle" id="chatToggle">💬 Asistente B&L</button>
-    <div class="chat-window">
-      <div class="chat-header">
-        <strong>Asistente B&L</strong>
-        <button id="chatMinimize" aria-label="Minimizar chatbot">−</button>
-      </div>
-      <div class="chat-body" id="chatBody">
-        <div class="bot-message">Hola, bienvenido a B&L Consultores. Escribí “hola” o seleccioná una opción para iniciar.</div>
-      </div>
-      <div class="quick-options">
-        <button data-option="1">1. Servicios</button>
-        <button data-option="2">2. Experiencia</button>
-        <button data-option="3">3. Información</button>
-        <button data-option="4">4. Asesor</button>
-      </div>
-      <form class="chat-input" id="chatForm">
-        <input type="text" id="chatInput" placeholder="Escribí tu mensaje..." autocomplete="off" />
-        <button type="submit">Enviar</button>
-      </form>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
 </body>
 </html>
